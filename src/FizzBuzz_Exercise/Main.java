@@ -7,6 +7,10 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+        FizzBuzz();
+    }
+
+    public static void FizzBuzz(){
         int Fizz,Buzz;
         System.out.print("Please input Fizz number:");
         Scanner in=new Scanner(System.in);
@@ -21,10 +25,6 @@ public class Main {
             System.out.println("Invalid Input, try again:");
             Buzz=in.nextInt();
         }
-        FizzBuzz(Fizz,Buzz);
-    }
-
-    public static void FizzBuzz(int Fizz, int Buzz){
         String[] word={"FizzBuzz","Fizz","Buzz"};
         for(int i=1;i<=100;i++){
             int say = (i%(Fizz*Buzz)==0?0:(i%Fizz==0?1:(i%Buzz==0?2:-1)));
