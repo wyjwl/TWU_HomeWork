@@ -1,4 +1,4 @@
-package com.Easiest_exercise_ever.Triangle_Exercises;
+package Triangle_Exercises.Easiest_exercise_ever;
 
 /**
  * Created by WYJ on 2016/6/3.

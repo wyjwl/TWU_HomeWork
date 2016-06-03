@@ -1,4 +1,4 @@
-package com.Draw_a_vertical_line.Triangle_Exercises;
+package Triangle_Exercises.Draw_a_horizontal_line;
 
 import java.util.Scanner;
 
@@ -11,17 +11,12 @@ public class Main {
         System.out.print("Please input number:");
         Scanner in=new Scanner(System.in);
         number=in.nextInt();
-        while( number<0){
+        while(number<0){
             System.out.println("Invalid Input, try again:");
             number=in.nextInt();
         }
         while (number--!=0){
             System.out.print("*");
-            if(number>0){
-                System.out.println();
-            }
         }
     }
-
-
 }
