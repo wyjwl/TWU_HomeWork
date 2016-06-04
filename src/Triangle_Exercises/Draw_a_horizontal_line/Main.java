@@ -7,6 +7,17 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+        int number = getNumber();
+        print(number);
+    }
+
+    private static void print(int number) {
+        while (number--!=0){
+            System.out.print("*");
+        }
+    }
+
+    private static int getNumber() {
         int number;
         System.out.print("Please input number:");
         Scanner in=new Scanner(System.in);
@@ -15,8 +26,6 @@ public class Main {
             System.out.println("Invalid Input, try again:");
             number=in.nextInt();
         }
-        while (number--!=0){
-            System.out.print("*");
-        }
+        return number;
     }
 }

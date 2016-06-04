@@ -9,6 +9,11 @@ import java.util.Set;
  */
 public class Main {
     public static void main(String[] args) {
+        int number = getNumber();
+        generate(number);
+    }
+
+    private static int getNumber() {
         int number;
         System.out.print("Please input a number:");
         Scanner in=new Scanner(System.in);
@@ -17,7 +22,7 @@ public class Main {
             System.out.println("Invalid Input, try again:");
             number=in.nextInt();
         }
-        generate(number);
+        return number;
     }
 
     public static void generate(int number){

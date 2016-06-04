@@ -7,14 +7,11 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        int number;
-        System.out.print("Please input number:");
-        Scanner in=new Scanner(System.in);
-        number=in.nextInt();
-        while(number<0){
-            System.out.println("Invalid Input, try again:");
-            number=in.nextInt();
-        }
+        int number = getNumber();
+        print(number);
+    }
+
+    private static void print(int number) {
         int maxLayerNumber=2*number-1;
         for(int rowNumber=1;rowNumber<=number;rowNumber++){
             for(int colNumber=1;colNumber<=maxLayerNumber;colNumber++){
@@ -29,5 +26,17 @@ public class Main {
                 System.out.println();
             }
         }
+    }
+
+    private static int getNumber() {
+        int number;
+        System.out.print("Please input number:");
+        Scanner in=new Scanner(System.in);
+        number=in.nextInt();
+        while(number<0){
+            System.out.println("Invalid Input, try again:");
+            number=in.nextInt();
+        }
+        return number;
     }
 }
